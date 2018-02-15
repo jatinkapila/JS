@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Clock for calculator</title>
+  <style media="screen">
+  body {
+font-family: 'Orbitron', sans-serif;
+background-color:tomato;
+}
+
+.calculator {
+height: 410px;
+width: 300px;
+margin-top: 10%;
+margin-left: auto;
+margin-right: auto;
+background-color:lavender;
+border: 2px solid olive;
+border-radius: 20px;
+box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #888888;
+}
+
+.title {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.entrybox {
+width: 85%;
+height: 65px;
+margin-left: auto;
+margin-right: auto;
+border: 2px solid #BFBFBF;
+border-radius: 6px;
+background-color: #c4c7ab;
+}
+
+.entry {
+margin-right: 10px;
+font-size: 35px;
+}
+
+.buttons {
+font-size: 16px;
+font-weight: bold;
+color: #fff;
+position: absolute;
+display: inline-block;
+width: 280px;
+height: auto;
+margin-top: 15px;
+margin-left: 15px;
+}
+
+button {
+border-radius: 8px;
+border: none;
+background-color:grey;
+margin: 0 4px 10px 8px;
+height: 40px;
+width: 50px;
+box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+}
+
+button:active {
+transform: translate(0px, 3px);
+box-shadow: none;
+}
+
+.row {
+margin-top: 20px
+}
+
+.topAdjust {
+margin-top: -52px;
+}
+
+.equalButton {
+position: absolute;
+margin-left: 12px;
+margin-top: -50px;
+height: 90px;
+}
+
+.zeroButton {
+width: 117px;
+}
+
+.red {
+font-size: 14px;
+background-color: #a72d45;
+box-shadow: 0px 3px 0px 0px #671c2a;
+}
+
+.footer {
+font-family: 'Josefin Sans', sans-serif;
+position: relative;
+font-size: 16px;
+font-weight: normal;
+margin-top: 40px;
+width: 100%;
+height: 40px;
+}
+
+button,
+button:hover,
+button:active,
+button:visited {
+text-decoration: none !important;
+outline: none !important;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+color: #922031;
+text-decoration: none !important;
+outline: none !important;
+}
+
+.history {
+/*transform: translate(-13px, -17px);*/
+position: relative;
+height: 10px;
+bottom: 17px;
+margin-right: 14px;
+color: #E9E9E9;
+font-size: 12px;
+}
+  </style>
+  <script type="text/javascript" src="calculator.js">
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <div class='container'>
+    <div class='calculator'>
+
+      <!-- TITLE -->
+
+      <div class='title' class='text-center'>
+        <h5><b>CALCULATOR</b></h5>
+      </div>
+
+      <!-- ENTRY BOX -->
+
+      <div class='entrybox' class='text-right'>
+        <div class='entry'>
+          <p class='answer'>0</p>
+        </div>
+        <div class='history'>
+          <p>0</p>
+        </div>
+      </div>
+
+      <!-- BUTTONS -->
+
+      <div class='buttons'>
+
+        <button class='red' value='ac'>AC</button>
+        <button class='red' value='ce'>CE</button>
+        <button value='/'>&divide;</button>
+        <button value='*'>x</button>
+
+        <button value='7'>7</button>
+        <button value='8'>8</button>
+        <button value='9'>9</button>
+        <button value='-'>-</button>
+
+        <button value='4'>4</button>
+        <button value='5'>5</button>
+        <button value='6'>6</button>
+        <button value='+'>+</button>
+
+
+        <button value='1'>1</button>
+        <button value='2'>2</button>
+        <button value='3'>3</button>
+        <button class='invisible'>N</button>
+
+        <button class='zeroButton' value='0'>0</button>
+        <button value='.'>.</button>
+        <button class='equalButton' value='='>=</button>
+
+      </div>
+      <!--  buttons end-->
+      <div class='tester'></div>
+    </div>
+    <!---  calculator end -->
+  </div>
+  <!-- container end -->
+
+  <footer class="footer" class="text-center">
+    <div class="container">
+      Designed & Coded by
+      Team:
+    </div>
+  </footer>
+
+
+</body>
+</html>
